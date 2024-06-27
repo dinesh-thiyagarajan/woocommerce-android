@@ -1,13 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Translation-Revision-Date: 2024-05-21 09:54:03+0000
+Translation-Revision-Date: 2024-06-18 09:54:03+0000
 Plural-Forms: nplurals=1; plural=0;
 Generator: GlotPress/2.4.0-alpha
 Language: ko_KR
 -->
 <resources>
-    <string name="more_menu_button_woo_pos_description">POS 모드에 대한 임시 진입점</string>
-    <string name="more_menu_button_woo_pos">Woo POS</string>
+    <string name="woopos_exit_confirmation_dismiss_button">취소</string>
+    <string name="woopos_exit_confirmation_confirm_button">종료</string>
+    <string name="woopos_exit_confirmation_message">POS를 종료하시겠어요?</string>
+    <string name="woopos_exit_confirmation_title">POS 종료</string>
+    <string name="woo_pos_car_pane_title">장바구니</string>
+    <string name="woo_pos_remove_item_from_cart_content_description">장바구니에서 아이템 빼기</string>
+    <string name="woo_pos_checkout_button">체크아웃</string>
+    <string name="woopos_reader_unknown">리더 상태 알 수 없음</string>
+    <string name="woopos_checkout">체크아웃</string>
+    <string name="woopos_reader_disconnected">리더 연결 해제됨</string>
+    <string name="woopos_reader_connecting">리더 연결 중</string>
+    <string name="woopos_reader_connected">리더 연결됨</string>
+    <string name="woopos_exit_pos">POS 종료</string>
+    <string name="dashboard_new_widgets_card_button">새 섹션 추가</string>
+    <string name="dashboard_product_stock_empty_products">선택한 재고 상태에 해당하는 상품을 찾을 수 없음</string>
+    <string name="dashboard_product_stock_wcanalytics_inactive_title">상품 재고 보고서를 로드할 수 없음</string>
+    <string name="dashboard_product_stock_no_sales_last_30_days">최근 30일간 판매된 아이템 없음</string>
+    <string name="dashboard_product_stock_sales_last_30_days">최근 30일간 판매된 아이템 %d개</string>
+    <string name="more_menu_button_woo_pos_description">앱을 금전 등록기처럼 사용</string>
+    <string name="more_menu_button_woo_pos">판매 지점 모드</string>
+    <string name="product_stock_status_low_stock">재고 부족</string>
+    <string name="order_detail_shipping_header">배송</string>
+    <string name="order_creation_feedback_action">피드백 공유</string>
+    <string name="order_creation_shipping_feedback_message">Woo를 사용하면 배송이 쉬워질까요?</string>
+    <string name="order_creation_shipping_feedback_title">배송이 추가되었습니다!</string>
+    <string name="order_creation_shipping_edit">배송 수정</string>
+    <string name="order_creation_shipping_title_edit">배송 수정</string>
+    <string name="cash_payments_order_note_adding_error">주문 메모를 추가하는 중 오류 발생</string>
+    <string name="cash_payments_order_note_text">주문이 현금으로 결제되었습니다. 고객이 %s을(를) 결제했습니다. %s이(가) 거슬러줄 잔돈이었습니다.</string>
+    <string name="cash_payments_mark_order_as_complete">주문을 완료로 표시</string>
+    <string name="cash_payments_record_transaction_details">주문 메모에 거래 상세 정보 기록</string>
+    <string name="dashboard_new_widgets_card_description">새 섹션을 추가하여 스토어 관리 환경을 사용자 정의하세요.</string>
+    <string name="dashboard_new_widgets_card_title">인사이트가 더 필요하신가요?</string>
+    <string name="dashboard_product_stock_products">상품</string>
+    <string name="dashboard_product_stock_levels">재고 수준</string>
+    <string name="dashboard_product_stock_status_header_title">상태</string>
+    <string name="dashboard_wcanalytics_inactive_contact_us">여전히 도움이 필요하신가요? 문의하기</string>
+    <string name="dashboard_coupons_wcanalytics_inactive_title">쿠폰 사용 보고서를 로드할 수 없음</string>
+    <string name="dashboard_coupons_card_empty_view_message">이 기간에 사용된 쿠폰 없음</string>
+    <string name="dashboard_coupons_view_all_button">모든 쿠폰 보기</string>
+    <string name="dashboard_coupons_card_header_uses">사용</string>
+    <string name="dashboard_coupons_card_header_coupons">쿠폰</string>
+    <string name="my_store_widget_product_stock_title">재고</string>
+    <string name="dashboard_action_view_all_messages">모든 메시지 보기</string>
+    <string name="dashboard_top_performers_wcanalytics_inactive_title">최고 인기 상품을 로드할 수 없음</string>
+    <string name="na">해당 없음</string>
+    <string name="cash_payments_change_due">거슬러줄 잔돈</string>
+    <string name="cash_payments_cash_received">현금 받음</string>
+    <string name="my_store_widget_coupons_title">가장 많이 사용된 쿠폰</string>
     <string name="cash_payments_take_payment_title">결제하기(%s)</string>
     <string name="dashboard_reviews_card_view_all_button">모든 리뷰 보기</string>
     <string name="dashboard_reviews_card_empty_message_filtered">선택한 필터와 일치하는 리뷰가 없습니다. 필터를 변경해 보세요.</string>
@@ -37,6 +84,7 @@ Language: ko_KR
     <string name="my_store_widget_onboarding_completed">완료됨</string>
     <string name="my_store_widget_feedback_title">피드백</string>
     <string name="my_store_stats_plugin_inactive_title">스토어 분석을\n 표시할 수 없음</string>
+    <string name="dashboard_wcanalytics_inactive_description">사이트에서 우커머스 최신 버전을 실행하고 있으며 우커머스 분석이 활성화되어 있는지 확인하세요.</string>
     <string name="store_onboarding_task_view_all_tasks">모든 작업 보기</string>
     <string name="analytics_session_no_available_description">세션 분석에서는 사용자 정의 범위에 사용할 수 없는 고유 방문자 수를 이용합니다</string>
     <string name="analytics_session_no_available">세션 데이터 사용 불가</string>
@@ -253,9 +301,9 @@ Language: ko_KR
     <string name="blaze_campaign_budget_impressions_title">노출 수</string>
     <string name="blaze_campaign_budget_update_button">업데이트</string>
     <string name="blaze_campaign_budget_edit_duration_button">편집</string>
-    <string name="blaze_campaign_budget_impressions_info">노출 수는 잠재적 고객에게 광고가 표시되는 빈도를 반영합니다.\n\n\n        온라인 트래픽과 사용자 행동의 유동성으로 인해 정확한 수는 보장할 수 없지만 광고의 실제 노출 수를 목표 수에 최대한 가깝게 일치시키는 것을 목표로 합니다.\n\n\n        노출 수는 독자의 행동이 아니라 가시성을 나타낸다는 점에 유의하세요.</string>
     <string name="blaze_campaign_budget_duration_section_title">지속기간</string>
     <string name="blaze_campaign_budget_reach_forecast">일일 예상 도달 인원</string>
+    <string name="blaze_campaign_budget_impressions_info">노출 수는 잠재적 고객에게 광고가 표시되는 빈도를 반영합니다.\n\n\n        온라인 트래픽과 사용자 행동의 유동성으로 인해 정확한 수는 보장할 수 없지만 광고의 실제 노출 수를 목표 수에 최대한 가깝게 일치시키는 것을 목표로 합니다.\n\n\n        노출 수는 독자의 행동이 아니라 가시성을 나타낸다는 점에 유의하세요.</string>
     <string name="blaze_campaign_budget_daily_spend">매일 %1$s</string>
     <string name="blaze_campaign_budget_days_duration">%1$s일 동안</string>
     <string name="blaze_campaign_budget_total_spend">총 지출</string>
@@ -292,7 +340,6 @@ Language: ko_KR
     <string name="blaze_campaign_creation_new_intro_benefit_3_title">방대한 잠재 고객에게 접근</string>
     <string name="blaze_campaign_creation_new_intro_benefit_2_subtitle">\"도구를 통해 관심 있는 쇼핑객이 찾을 수 있는 위치에 제품이 표시됩니다.\"</string>
     <string name="blaze_campaign_creation_new_intro_benefit_2_title">전 세계 도달 범위 간단하게 확보</string>
-    <string name="blaze_campaign_creation_new_intro_benefit_1_subtitle">몇 분 만에 광고 시작 - 경험이나 많은 예산이 필요하지 않습니다. 단 $5 USD로 시작할 수 있습니다.</string>
     <string name="blaze_campaign_creation_new_intro_learn_more">Blaze 작동 방식 알아보기</string>
     <string name="blaze_campaign_creation_new_intro_benefit_1_title">빠른 시작, 큰 효과</string>
     <string name="blaze_campaign_creation_new_intro_description">판매자가 빠르고 간단한 광고 캠페인 설정을 통해 트래픽을 극대화할 수 있도록 도구를 설계했습니다.</string>

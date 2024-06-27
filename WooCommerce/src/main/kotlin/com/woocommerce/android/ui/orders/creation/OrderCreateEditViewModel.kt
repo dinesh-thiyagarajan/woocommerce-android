@@ -482,7 +482,10 @@ class OrderCreateEditViewModel @Inject constructor(
                 .takeIf { shouldDisplayShippingLinesFeedback() }
                 ?.collect {
                     delay(DELAY_BEFORE_SHOWING_SHIPPING_FEEDBACK)
-                    viewState = viewState.copy(showShippingFeedback = true)
+                    viewState = viewState.copy(
+                        showShippingFeedback = true,
+                        isTotalsExpanded = false
+                    )
                 }
         }
     }
@@ -1304,7 +1307,7 @@ class OrderCreateEditViewModel @Inject constructor(
         val settings =
             feedbackRepository.getFeatureFeedbackSetting(FeatureFeedbackSettings.Feature.ORDER_SHIPPING_LINES)
         return settings.feedbackState == FeatureFeedbackSettings.FeedbackState.UNANSWERED ||
-            settings.isFeedbackGivenMoreThanDaysAgo(DAYS_BEFORE_SHOWING_SHIPPING_FEEDBACK)
+            settings.isFeedbackMoreThanDaysAgo(DAYS_BEFORE_SHOWING_SHIPPING_FEEDBACK)
     }
 
     fun onSendShippingFeedback() {
@@ -1329,6 +1332,9 @@ class OrderCreateEditViewModel @Inject constructor(
 
     private fun onExpandCollapseTotalsClicked() {
         val newTotalsExpandedState = !viewState.isTotalsExpanded
+        if (viewState.showShippingFeedback) {
+            onCloseShippingFeedback()
+        }
         viewState = viewState.copy(isTotalsExpanded = newTotalsExpandedState)
         tracker.track(
             AnalyticsEvent.ORDER_FORM_TOTALS_PANEL_TOGGLED,

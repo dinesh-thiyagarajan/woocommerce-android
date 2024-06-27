@@ -5,6 +5,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id 'io.gitlab.arturbosch.detekt'
     id 'com.automattic.android.measure-builds'
+    id "com.autonomousapps.dependency-analysis"
     id 'com.android.application' apply false
     id 'org.jetbrains.kotlin.android' apply false
     id 'com.google.dagger.hilt.android' apply false
@@ -98,13 +99,14 @@ tasks.register("installGitHooks", Copy) {
 }
 
 ext {
-    fluxCVersion = 'trunk-a018ee9062d23f3a9280a2bf1e87c6b782616b55'
+    fluxCVersion = 'trunk-e7f84fab139d1211941b37e1fc710207cb25eb47'
     glideVersion = '4.16.0'
     coilVersion = '2.1.0'
     constraintLayoutVersion = '1.2.0'
     libaddressinputVersion = '0.0.2'
     eventBusVersion = '3.3.1'
     googlePlayCoreVersion = '1.10.3'
+    googlePlayWearableVersion = '18.1.0'
     coroutinesVersion = '1.7.3'
     lifecycleVersion = '2.6.2'
     aztecVersion = 'v1.3.45'
